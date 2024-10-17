@@ -15,7 +15,7 @@ function togglePassword() {
 function setRole(role) {
     document.getElementById('role').value = role;
     document.getElementById('dropdownMenuButton').innerText = role;  // Update button text
-    validateFields();  // Re-validate fields
+    validateFields();
 }
 
 function validateFields() {
@@ -47,7 +47,7 @@ function validateFields() {
         document.getElementById('role-error').innerText = '';
     }
 
-    // Enable or disable the login button
+
     loginBtn.disabled = !isValid;
 }
 
